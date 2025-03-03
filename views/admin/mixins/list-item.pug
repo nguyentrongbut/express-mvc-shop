@@ -1,0 +1,8 @@
+mixin list-item(name, items)
+    ul.navbar_list
+        li.fw-bold= name
+        each item in items
+            li.item
+                a(href=`${prefixAdmin}/${item.href}` class="d-flex align-items-center")
+                    i(class=item.icon)
+                    span= item.title
