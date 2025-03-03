@@ -27,8 +27,4 @@
     }
   },
   "alias": ["express-mvc-shop.vercel.app"],
-  "projectSettings": {
-    "framework": "express",
-    "productionBranch": "release"
-  }
 }
