@@ -1,0 +1,21 @@
+include ../mixins/list-item
+
+- const general = [{title: "Dashboard", href: "dashboard", icon: "bi bi-menu-button-wide"}, {title: "Products", href: "product", icon: "bi bi-backpack2-fill"}, {title: "Category", href: "category", icon: "bi bi-clipboard-minus-fill"}, {title: "Settings", href: "settings", icon: "bi bi-gear"}]
+- const users = [{title: "Profile", href: "profile", icon: "bi bi-chat-heart-fill"}, {title: "Roles", href: "roles", icon: "bi bi-people-fill"}, {title: "Permissions", href: "permissions", icon: "bi bi-clipboard2-check"}, {title: "Customers", href: "customers", icon: "bi bi-person-vcard-fill"}]
+
+
+div
+    div(data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample")
+        i.bi.bi-list.fs-5.icon-color.cursor-pointer
+    nav(
+        class="offcanvas offcanvas-start"
+        id="offcanvasExample"
+    )
+        .logo.d-flex.justify-content-center
+            a(href=`${prefixAdmin}/dashboard`).d-flex.align-items-center.gap-1
+                h1.fs-4.text-white.fw-bold Sztruyen
+
+        // General
+        +list-item("general", general)
+        // User
+        +list-item("users", users)

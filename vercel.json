@@ -1,0 +1,34 @@
+{
+  "name": "express-mvc-shop",
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "index.js"
+    }
+  ],
+  "github": {
+    "enabled": true,
+    "silent": true,
+    "autoAlias": true
+  },
+  "git": {
+    "deploymentEnabled": {
+      "main": false,
+      "develop": true,
+      "release": true,
+      "feature": false
+    }
+  },
+  "alias": ["express-mvc-shop.vercel.app"],
+  "projectSettings": {
+    "framework": "express",
+    "productionBranch": "release"
+  }
+}
