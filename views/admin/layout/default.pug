@@ -3,7 +3,7 @@ html(lang="vi")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1")
-        title= title
+        title= titlePage
 
 
         // Bootstrap 5
@@ -23,8 +23,9 @@ html(lang="vi")
 
         link(rel="stylesheet", href="/admin/css/style.css")
     body
-        .main
-            include ../partials/slider
+
+        include ../partials/header
+        main
             block main
 
         // Bootstrap 5

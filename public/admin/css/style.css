@@ -3,6 +3,7 @@
     --bs-topbar-item-color: #707793;
     --bs-s-topbar-color: #9097a7;
     --bs-overlay-color: #2f3944;
+    --bs-body-color: #f9f7f7;
 }
 /* End Custom color Bootstrap */
 
@@ -30,7 +31,7 @@
 /* End Custom container */
 
 /* Color */
-.icon-color {
+.icon-color, .text-title-color {
     color: var(--bs-topbar-item-color);
 }
 /* End Color */
@@ -38,6 +39,8 @@
 /* Logo */
 .logo {
     height: 100px;
+    position: sticky;
+    top: 0;
 }
 /* End Logo */
 
@@ -65,3 +68,48 @@
     gap: 12px;
 }
 /* End Slider */
+
+/* Header */
+.header {
+    height: 100px;
+    background: var(--bs-body-color);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+/* End Header */
+
+/* Search */
+.header-search .header-icon {
+    position: absolute;
+    z-index: 10;
+    font-size: 14px;
+    left: 11px;
+    top: 50%;
+    color: var(--bs-s-topbar-color);
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.header-search input {
+    display: block;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 8px;
+    border: none;
+    padding-left: 40px;
+    padding-right: 15px;
+    background: #eae8e8;
+    caret-color: black;
+    box-shadow: none;
+    height: 42px;
+    outline: none;
+}
+
+.header-search input:focus {
+    background: #eae8e8;
+    outline: none;
+    box-shadow: none;
+    color: var(--bs-topbar-item-color);
+}
+/* End Search */

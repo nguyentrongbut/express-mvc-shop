@@ -1,0 +1,17 @@
+.header.bg-white.d-flex.align-items-center.h-100px
+    header.container-fluid
+        .d-flex
+            .d-flex.align-items-center.gap-4
+                include ./slider
+                h4.text-title-color.fw-bold.text-uppercase= title
+            .d-flex.align-items-center.gap-1.ms-auto
+                form.header-search.d-none.d-md-block.ms-2
+                    .position-relative
+                        input(
+                            type="search"
+                            class="form-control"
+                            placeholder="Search..."
+                            autocomplete="off"
+                        )
+                        .header-icon.bi.bi-search
+
