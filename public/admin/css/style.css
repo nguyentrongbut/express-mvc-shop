@@ -45,7 +45,7 @@
 /* End Logo */
 
 /* Slider */
-.navbar_list li {
+.navbar_list li a {
     padding: 12px 32px;
     cursor: pointer;
 }
@@ -55,6 +55,7 @@
     font-size: 11px;
     cursor: default;
     text-transform: uppercase;
+    padding: 12px 32px;
 }
 
 .navbar_list .item {
@@ -66,6 +67,11 @@
 .navbar_list .item a {
     color: var(--bs-s-topbar-color);
     gap: 12px;
+    transition: color 0.3s linear;
+}
+
+.navbar_list .item a:hover {
+    color: var(--bs-white);
 }
 /* End Slider */
 
