@@ -1,0 +1,12 @@
+/* Custom overlay Offcanavas Bootstrap*/
+
+.offcanvas-slider {
+    --bs-offcanvas-backdrop-bg: rgba(93, 113, 134, 0.75);
+    --bs-offcanvas-bg: var(--bs-overlay-color);
+    --bs-offcanvas-width: 280px;
+}
+/* End Custom overlay Offcanavas Bootstrap*/
+
+.cursor-pointer {
+    cursor: pointer;
+}

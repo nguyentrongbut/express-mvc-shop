@@ -1,0 +1,21 @@
+extends ../../layout/auth
+include ../../mixins/input
+
+block main
+    .form-login.min-vh-100.d-flex.align-items-center.mx-auto
+        .d-flex.flex-column.justify-content-center
+            .auth-logo.mb-4
+                a(href=`${prefixAdmin}/dashboard`)
+                    span.fw-bold.fs-4 Sztruyen
+            h2.fw-semibold.text-black Sign In
+            p.text-muted.mt-1.mb-4 Enter your email address and password to access admin panel.
+            .mb-5
+                form( class="authentication-form")
+                    +input-login("email")
+                    +input-login("password")
+                    .mb-3
+                        div(class="form-check d-flex align-items-center gap-2 mb-0")
+                            input(type="checkbox" id="checkbox-signin" class="form-check-input mt-0 cursor-pointer")
+                            label(class="form-check-label cursor-pointer" for="checkbox-signin") Remember me
+                    .mb-1.text-danger.d-grid
+                        button(class="btn btn-soft-primary" type="submit") Sign In
