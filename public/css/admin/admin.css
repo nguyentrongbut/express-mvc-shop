@@ -8,6 +8,8 @@
 @import "../common/offcanavas.css";
 @import "../common/input.css";
 @import "../common/checkbox.css";
+@import "../common/showAlert.css";
+@import "../common/globalClass.css";
 
 /* Layouts */
 @import "./layouts/header.css";

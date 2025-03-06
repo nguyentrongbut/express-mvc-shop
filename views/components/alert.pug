@@ -1,0 +1,21 @@
+mixin alert-success(time)
+    - if (messages.success)
+        .message.info
+            div(
+                class="alert alert-success d-flex gap-3 align-items-center"
+                show-alert
+                data-time=time
+            )
+                span #{messages.success}
+                    <i close-alert class="bi bi-x-circle cursor-pointer fs-5 text-black"></i>
+
+mixin alert-error(time)
+    - if (messages.error)
+        .message.info
+            div(
+                class="alert alert-danger d-flex gap-3 align-items-center"
+                show-alert
+                data-time=time
+            )
+                span #{messages.error}
+                <i close-alert class="bi bi-x-circle cursor-pointer fs-5 text-black"></i>

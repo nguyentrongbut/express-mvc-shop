@@ -1,0 +1,17 @@
+/* Show Alert */
+[show-alert] {
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    z-index: 9999;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    font-size: 13px;
+}
+
+[show-alert].alert-hidden {
+    opacity: 0;
+    transform: translateX(150%);
+    pointer-events: none;
+}
+
+/* End Show Alert */

@@ -15,4 +15,7 @@
     font-size: 13px;
 }
 
+.min-h-login {
+    min-height: calc(100vh - 32px);
+}
 /* End Form Login */

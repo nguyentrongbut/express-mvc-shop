@@ -1,0 +1,4 @@
+mixin input-login(type)
+    .mb-4
+        label(class="form-label text-capitalize cursor-pointer" for=type)= type
+        input(type=type id=type name=type class="form-control" placeholder=`Enter your ${type}` required)

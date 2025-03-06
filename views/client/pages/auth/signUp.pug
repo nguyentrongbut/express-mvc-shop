@@ -1,0 +1,36 @@
+extends ../../layout/auth
+include ../../../components/input
+include ../../../components/alert
+
+block main
+    +alert-error(3000)
+    .d-flex.flex-column.h-100.p-3
+        .d-flex.flex-column.flex-grow-1
+            .row.min-h-login
+                .col-xxl-7
+                    .row.justify-content-center.h-100
+                        .col-lg-6.py-lg-5.d-flex.align-items-center.justify-content-center
+                            .form-login
+                                .d-flex.flex-column.justify-content-center
+                                    .auth-logo.mb-4
+                                        a(href="/")
+                                            span.fw-bold.fs-4 Sztruyen
+                                    h2.fw-semibold.text-black Sign Up
+                                    p.text-muted.mt-1.mb-4 New to our platform? Sign up now! It only takes a minute
+                                        form(action="/auth/signUp" method="POST" class="authentication-form pt-2")
+                                            +input-login("name")
+                                            +input-login("email")
+                                            +input-login("password")
+                                            .mb-3
+                                                div(class="form-check d-flex align-items-center gap-2 mb-0")
+                                                    input(type="checkbox" id="checkbox-signUp" class="form-check-input mt-0 cursor-pointer" required)
+                                                    label(class="form-check-label cursor-pointer" for="checkbox-signUp") I accept Terms and Condition
+                                            .mb-1.text-danger.d-grid
+                                                button(class="btn btn-soft-primary" type="submit") Sign Up
+                                            .text-center.mt-5
+                                                p.text-danger I already have an account
+                                                    a(href="/auth/signin" class="text-black fw-bold ms-2") Sign In
+                .col-xxl-5.d-none.d-xxl-flex
+                    .card.h-100.overflow-hidden
+                        .d-flex.flex-column.h-100
+                            img(src="/images/login.png" alt="Sztruyen" class="w-100 h-100 object-fit-cover")
