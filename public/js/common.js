@@ -1,21 +1,19 @@
-// Show alert
-const showAlert = () => {
-    const showAlert = document.querySelector('[show-alert]')
+// Show alert (auth)
 
-    if (showAlert) {
-        const time = parseInt(showAlert.getAttribute('data-time'))
-        const closeAlert = showAlert.querySelector('[close-alert]')
+const showAlert = document.querySelector('[show-alert]')
 
-        setTimeout(() => {
-            showAlert.classList.add('alert-hidden')
-        }, time)
+if (showAlert) {
+    const time = parseInt(showAlert.getAttribute('data-time'))
+    const closeAlert = showAlert.querySelector('[close-alert]')
 
-        closeAlert.addEventListener('click', () => {
-            showAlert.classList.add('alert-hidden')
-        })
-    }
+    setTimeout(() => {
+        showAlert.classList.add('alert-hidden')
+    }, time)
+
+    closeAlert.addEventListener('click', () => {
+        showAlert.classList.add('alert-hidden')
+    })
 }
 
-// End Show alert
+// End Show alert (auth)
 
-export { showAlert }
