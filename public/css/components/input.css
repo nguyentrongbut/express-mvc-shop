@@ -1,0 +1,35 @@
+.text-title {
+    color: var(--form-label-color);
+}
+
+.form-label {
+    font-size: 13px;
+    margin-bottom: 9px;
+    font-weight: 500;
+    color: var(--form-label-color);
+}
+
+.form-control {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+    font-weight: 400;
+    color: var(--bs-body-color);
+    background-color: var(--bs-secondary-bg);
+    border: var(--bs-border-width) solid var(--input-border-color);
+    border-radius: var(--bs-border-radius-sm);
+}
+
+.form-control::placeholder {
+    color: var(--form-label-color);
+}
+
+.form-control:focus {
+    outline: 0;
+    background-color: var(--bs-secondary-bg);
+    border-color: var(--input-focus-border-color);
+    box-shadow: none;
+}
+
+.form-check-input {
+    border: var(--bs-border-width) solid var(--input-border-color);
+}

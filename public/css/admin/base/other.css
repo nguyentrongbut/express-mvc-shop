@@ -1,0 +1,19 @@
+/* ========== BOOTSTRAP OVERRIDES (border-radius, shadows) ========== */
+:root {
+    /* Shadows */
+    --bs-box-shadow: 0 5px 10px rgba(30, 32, 37, 0.12);
+
+    /* dropdown */
+    --border-px-dropdown: 0;
+    --boder-color-dropdown: transparent;
+}
+
+[data-theme="dark"] {
+    /* Shadows */
+    --bs-box-shadow: 0 5px 10px rgba(30, 32, 37, 0.12);
+
+    /* dropdown */
+    --border-px-dropdown: 1px;
+    --boder-color-dropdown: #2f3944;
+}
+/* ========== BOOTSTRAP OVERRIDES (border-radius, shadows) ========== */

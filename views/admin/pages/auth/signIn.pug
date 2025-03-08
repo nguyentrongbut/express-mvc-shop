@@ -1,0 +1,23 @@
+extends ../../layout/auth
+include ../../../components/input
+include ../../../components/alert
+
+block main
+    +alert-error(3000)
+
+    .form-login.min-vh-100.d-flex.align-items-center.mx-auto
+        .d-flex.flex-column.justify-content-center.w-100
+            .auth-logo.mb-4
+                a(href=`/`)
+                    span.fw-bold.fs-4 Sztruyen
+            h2.fw-semibold.text-title.text-center Sign In
+            form(action=`${prefixAdmin}/auth/signIn` method="POST" class="authentication-form pt-2")
+                +input-login("email")
+                +input-login("password")
+                .mb-3
+                    div(class="form-check d-flex align-items-center gap-2 mb-0")
+                        input(type="checkbox" id="checkbox-signin" class="form-check-input mt-0 cursor-pointer")
+                        label(class="form-check-label cursor-pointer" for="checkbox-signin") Remember me
+                .mb-1.text-danger.d-grid
+                    button(class="btn btn-soft-primary" type="submit") Sign In
+

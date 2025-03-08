@@ -1,0 +1,37 @@
+/* ========== Variable share ========== */
+:root {
+    /* Background Colors */
+    --bs-body-bg: #f9f7f7;
+    --bs-secondary-bg: #fff;
+
+    /* Border Radius */
+    --bs-border-radius-sm: 8px;
+
+    /* Input */
+    --input-border-color: #d8dfe7;
+    --input-focus-border-color: #b0b0bb;
+    --form-label-color: #5d7186;
+
+    /* btn */
+    --btn-color: #ff6c2f;
+    --btn-bg: rgba(255, 108, 47, 0.1);
+
+    /* logo */
+    --logo-color: var(--bs-black);
+}
+
+[data-theme="dark"] {
+    /* Background Colors */
+    --bs-body-bg: #262d34;
+
+    /* logo */
+    --logo-color: var(--bs-white);
+
+    /* input */
+    --form-label-color: #8391a2;
+    --bs-secondary-bg: #282f36;
+    --bs-body-color: #aab8c5;
+    --input-border-color: #3a4551;
+    --input-focus-border-color: #4a5663;
+}
+/* ========== Variable share ========== */

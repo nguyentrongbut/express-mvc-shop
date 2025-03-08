@@ -1,0 +1,15 @@
+/* Color */
+.icon-color, .text-title-color {
+    color: var(--topbar-item-color);
+}
+/* End Color */
+
+/* Header */
+.header {
+    height: 100px;
+    background: var(--bs-body-bg);
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+/* End Header */

@@ -1,0 +1,21 @@
+/* Form Login */
+.auth-logo a {
+    color: var(--logo-color);
+}
+.form-login {
+    width: 482px;
+}
+
+.form-login h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.form-login p {
+    font-size: 13px;
+}
+
+.min-h-login {
+    min-height: calc(100vh - 32px);
+}
+/* End Form Login */

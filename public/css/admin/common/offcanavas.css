@@ -1,0 +1,11 @@
+/* Custom overlay Offcanavas Bootstrap*/
+.offcanvas-slider {
+    --bs-offcanvas-bg: var(--slider-bg);
+    --bs-offcanvas-width: 280px;
+}
+.offcanvas-backdrop.show {
+    background: var(--bs-emphasis-color);
+    opacity: 0.5;
+}
+/* End Custom overlay Offcanavas Bootstrap*/
+
