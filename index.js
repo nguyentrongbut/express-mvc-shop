@@ -8,7 +8,7 @@ const flash = require('express-flash')
 
 const database = require("./config/database")
 
-// Import variables
+// Import base
 const systemConfig = require("./config/system")
 
 // Import Routes
@@ -34,7 +34,7 @@ app.set('views', `${__dirname}/views`)
 app.set("view engine", "pug");
 
 
-// App locals variables
+// App locals base
 app.locals.prefixAdmin = systemConfig.prefixAdmin
 
 app.use(express.static(`${__dirname}/public`))

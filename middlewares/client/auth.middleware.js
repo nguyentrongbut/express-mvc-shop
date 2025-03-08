@@ -9,7 +9,7 @@ const REFRESH_SECRET = process.env.REFRESH_SECRET;
 const refreshAccessToken = async (refreshToken, res) => {
     try {
         const decodedRefresh = jwt.verify(refreshToken, REFRESH_SECRET);
-        const user = await Account.findOne({ _id: decodedRefresh.userId, refreshToken, deleted: false }).select("-password -refreshToken");
+        const user = await Account.findOne({ _id: decodedRefresh.userId, refreshToken, deleted: false }).select("-password -refreshToken -deleted");
 
         if (!user) {
             res.clearCookie("refreshToken");
@@ -32,7 +32,7 @@ const refreshAccessToken = async (refreshToken, res) => {
 const authenticateUser = async (token) => {
     try {
         const decoded = jwt.verify(token, JWT_SECRET);
-        const user = await Account.findOne({ _id: decoded.userId, deleted: false }).select("-password -refreshToken");
+        const user = await Account.findOne({ _id: decoded.userId, deleted: false }).select("-password -refreshToken -deleted");
         return user ? user : null;
     } catch (error) {
         return error.name === "TokenExpiredError" ? "expired" : null;

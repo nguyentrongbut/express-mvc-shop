@@ -1,6 +1,6 @@
 /* Color */
 .icon-color, .text-title-color {
-    color: var(--bs-topbar-item-color);
+    color: var(--topbar-item-color);
 }
 /* End Color */
 

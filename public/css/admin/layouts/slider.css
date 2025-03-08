@@ -13,7 +13,7 @@
 }
 
 .navbar_list li:first-child {
-    color: var(--bs-topbar-item-color);
+    color: var(--topbar-item-color);
     font-size: 11px;
     cursor: default;
     text-transform: uppercase;
@@ -21,13 +21,13 @@
 }
 
 .navbar_list .item {
-    color: var(--bs-s-topbar-color);
+    color: var(--topbar-color);
     font-size: 15px;
     font-weight: 500;
 }
 
 .navbar_list .item a {
-    color: var(--bs-s-topbar-color);
+    color: var(--topbar-color);
     gap: 12px;
     transition: color 0.3s linear;
 }

@@ -5,7 +5,7 @@
     font-size: 14px;
     left: 11px;
     top: 50%;
-    color: var(--bs-s-topbar-color);
+    color: var(--topbar-color);
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -18,17 +18,27 @@
     border: none;
     padding-left: 40px;
     padding-right: 15px;
-    background: #eae8e8;
-    caret-color: black;
+    background: var(--search-input-bg);
+    caret-color: var(--topbar-color);
     box-shadow: none;
     height: 42px;
     outline: none;
 }
 
+.header-search input::placeholder {
+    color: var(--topbar-color);
+}
+
+.header-search input[type="search"]::-webkit-search-cancel-button {
+    filter: invert(1);
+    opacity: 1;
+}
+
 .header-search input:focus {
-    background: #eae8e8;
+    background: var(--search-input-bg);
     outline: none;
     box-shadow: none;
-    color: var(--bs-topbar-item-color);
+    color: var(--topbar-item-color);
 }
+
 /* End Search */

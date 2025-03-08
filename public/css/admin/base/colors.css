@@ -1,0 +1,45 @@
+/* ========== BOOTSTRAP OVERRIDES Colors ========== */
+:root {
+    --bs-primary: #ff6c2f;
+    --bs-secondary: #5d7186;
+    --bs-success: #22c55e;
+    --bs-warning: #f9b931;
+    --bs-info: #4ecac2;
+    --bs-danger: #ef5f5f;
+
+    --bs-emphasis-color: rgba(93, 113, 134, 0.75);
+
+    /* Body Colors */
+    --bs-body-color: #5d7186;
+
+    /* Component Colors */
+    /* offcanavas */
+    --topbar-color: #9097a7;
+    --topbar-item-color: #707793;
+    --slider-bg: #262d34;
+
+    /* search */
+    --search-input-bg: #eae8e8;
+
+    /*dropdown*/
+    --bs-dropdown-bg: var(--bs-white);
+    --dropdown-item-hover-bg: var(--bs-tertiary-bg);
+    --dropdown-item-hover-color: var(--bs-body-color) ;
+    /* End Component Colors */
+}
+
+[data-theme="dark"] {
+    --bs-emphasis-color: #dee2e6;
+
+    /* offcanavas */
+    --topbar-item-color: var(--bs-emphasis-color);
+
+    /* search */
+    --search-input-bg: #2c3238;
+
+    /* dropdown */
+    --bs-dropdown-bg: #2c3238;
+    --dropdown-item-hover-color: #aab8c5;
+    --dropdown-item-hover-bg: #2f3943;
+}
+/* ========== BOOTSTRAP OVERRIDES Colors ========== */

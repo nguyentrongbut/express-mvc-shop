@@ -1,5 +1,4 @@
 /* Custom Checkbox */
-
 .form-check-label {
     font-size: 13px;
     font-weight: 500;
@@ -8,7 +7,7 @@
 .form-check-input:focus {
     box-shadow: none;
     outline: 0;
-    border-color: var(--bs-input-focus-border-color);
+    border-color: var(--input-focus-border-color);
 }
 
 .form-check-input:checked {

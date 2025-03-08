@@ -10,7 +10,7 @@ block main
             .auth-logo.mb-4
                 a(href=`/`)
                     span.fw-bold.fs-4 Sztruyen
-            h2.fw-semibold.text-black.text-center Sign In
+            h2.fw-semibold.text-title.text-center Sign In
             form(action=`${prefixAdmin}/auth/signIn` method="POST" class="authentication-form pt-2")
                 +input-login("email")
                 +input-login("password")

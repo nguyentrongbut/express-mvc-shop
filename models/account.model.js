@@ -5,6 +5,10 @@ const accountSchema = new mongoose.Schema({
   email: String,
   password: String,
   refreshToken: String,
+  phone: String,
+  avatar: String,
+  role_id: String,
+  status: String,
   deleted: {
     type: Boolean,
     default: false

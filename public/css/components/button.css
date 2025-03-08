@@ -1,19 +1,15 @@
-/* Custom Button Bootstrap */
-
 .btn-soft-primary {
     --bs-btn-color: var(--btn-color);
     --bs-btn-bg: var(--btn-bg);
     --bs-btn-border-color: transparent;
-    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-color: var(--bs-white);
     --bs-btn-hover-bg: var(--btn-color);
     --bs-btn-hover-border-color: var(--btn-color);
-    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-color: var(--bs-white);
     --bs-btn-active-bg: var(--btn-color);
     --bs-btn-active-border-color: var(--btn-color);
-    --bs-btn-disabled-color: #ffffff;
+    --bs-btn-disabled-color: var(--bs-white);
     --bs-btn-disabled-bg: var(--btn-color);
     --bs-btn-disabled-border-color: var(--btn-color);
     --bs-btn-focus-shadow-rgb: 0, 0, 0;
 }
-/* End Custom Button Bootstrap*/
-

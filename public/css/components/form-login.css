@@ -1,6 +1,6 @@
 /* Form Login */
 .auth-logo a {
-    color: var(--bs-black);
+    color: var(--logo-color);
 }
 .form-login {
     width: 482px;

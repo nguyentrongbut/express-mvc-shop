@@ -16,20 +16,20 @@ block main
                                     .auth-logo.mb-4
                                         a(href="/")
                                             span.fw-bold.fs-4 Sztruyen
-                                    h2.fw-semibold.text-black Sign In
-                                    p.text-muted.mt-1.mb-4 Enter your email address and password to access admin panel.
+                                    h2.fw-semibold.text-tilte Sign In
+                                    p.text-title.mt-1.mb-4 Enter your email address and password to access admin panel.
                                         form(action="/auth/signIn" method="POST" class="authentication-form pt-2")
                                             +input-login("email")
                                             +input-login("password")
                                             .mb-3
                                                 div(class="form-check d-flex align-items-center gap-2 mb-0")
                                                     input(type="checkbox" id="checkbox-signin" class="form-check-input mt-0 cursor-pointer")
-                                                    label(class="form-check-label cursor-pointer" for="checkbox-signin") Remember me
+                                                    label(class="form-check-label cursor-pointer text-title" for="checkbox-signin") Remember me
                                             .mb-1.text-danger.d-grid
                                                 button(class="btn btn-soft-primary" type="submit") Sign In
                                             .text-center.mt-5
                                                 p.text-danger Don't have an account?
-                                                    a(href="/auth/signup" class="text-black fw-bold ms-2") Sign Up
+                                                    a(href="/auth/signup" class="text-title fw-bold ms-2") Sign Up
                 .col-xxl-5.d-none.d-xxl-flex
                     .card.h-100.overflow-hidden
                         .d-flex.flex-column.h-100
